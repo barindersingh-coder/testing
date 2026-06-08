@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ job.title }}</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+}
+
+.container{
+    width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h1{
+    color:#1e40af;
+}
+
+.comp-name{
+    font-size:22px;
+    color:#444;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.section{
+    margin-top:20px;
+}
+
+.styles_JDC__dang-inner-html__h0K4t{
+    line-height:1.8;
+}
+
+.styles_key-skill__GIPn_{
+    background:#eef2ff;
+    padding:15px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Job Title -->
+    <h1>
+        {{ job.title }}
+    </h1>
+
+    <!-- Company Name -->
+    <div class="comp-name">
+        {{ job.company }}
+    </div>
+
+    <div class="section">
+
+        <h3>Job Description</h3>
+
+        <div class="styles_JDC__dang-inner-html__h0K4t">
+
+            {{ job.description }}
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h3>Required Skills</h3>
+
+        <div class="styles_key-skill__GIPn_">
+
+            {{ job.skills }}
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
